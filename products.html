@@ -1,39 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Magasin virtuel - Produits</title>
 </head>
+
 <body>
-<header>
-  <a href="/index.html""><img src="assets/img/logo.svg" alt="logo"></a>
-  <nav>
-    <a href="/index.html">Accueil</a>
-    <a href="/products.html">Produits</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/shopping-cart.html">Panier</a>
-  </nav>
-</header>
+  <header>
+    <a href="index.html"">
+    <img src=" assets/img/logo.svg" alt="logo">
+    </a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="products.html">Produits</a>
+      <a href="contact.html">Contact</a>
+      <a href="shopping-cart.html">Panier</a>
+    </nav>
+  </header>
 
-<aside>
-  <ul>
-    <li>Catégories
-      <ul>
-        <li>Appareils photo</li>
-        <li>Consoles</li>
-        <li>Écrans</li>
-        <li>Ordinateurs</li>
-        <li>Tous les produits</li>
-      </ul>
-    </li>
-    <li>Classement</li>
-  </ul>
-</aside>
+  <aside>
+    <form action="products.html" method="get">
+      <fieldset id="productcategories">
+        <legend>Catégories</legend>
+        <button name="productcategories" value="appareil">Appareils photo</button>
+        <button name="productcategories" value="console">Consoles</button>
+        <button name="productcategories" value="ecrans">Écrans</button>
+        <button name="productcategories" value="ordinateurs">Ordinateurs</button>
+        <button name="productcategories" value="tous">Tous les produits</button>
+      </fieldset>
+    </form>
 
-<main>
+    <form action="products.html">
+      <fieldset id="productcriteria">
+        <!-- TODO: name/value -->
+        <legend>Classement</legend>
+        <button>Prix (bas-haut)</button>
+        <button>Prix (haut-bas)</button>
+        <button>Nom (A-Z)</button>
+        <button>Nom (Z-A)</button>
+      </fieldset>
+    </form>
 
-</main>
-  
+  </aside>
+
+  <article>
+
+    <h1>Produits</h1>
+    <p>6 produits</p>
+    <ul id="productslist">
+
+      <li>
+        <a href="product.html" id="1">
+          <h3>Apple TV</h3>
+          <img src="assets/img/apple-tv.png" alt="Apple TV">
+          <p>249.99$</p>
+        </a>
+      </li>
+      <!-- TODO ajouter liste -->
+    </ul>
+
+
+    <fieldset>
+
+
+      <fieldset>
+
+      </fieldset>
+
+      <fieldset>
+        <a href="product.html" id="2">
+          <h3>Canon EOS 5D Mark II</h3>
+          <img src="assets/img/camera-1.png" alt="Canon EOS 5D Mark II">
+          <p>2999.99$</p>
+        </a>
+      </fieldset>
+
+      <fieldset>
+        <a href="product.html" id="3">
+          <h3>Nikon D7000</h3>
+          <img src="assets/img/camera-2.png" alt="Nikon D7000">
+          <p>549.99$</p>
+        </a>
+      </fieldset>
+
+      <fieldset>
+        <a href="product.html" id="4">
+          <h3>Canon PowerShot SD1300</h3>
+          <img src="assets/img/camera-3.png" alt="Canon PowerShot SD1300">
+          <p>299.99$</p>
+        </a>
+      </fieldset>
+
+      <fieldset>
+        <a href="product.html" id="5">
+          <h3>Portable</h3>
+          <img src="assets/img/laptop-1.png" alt="Portable">
+          <p>699.99$</p>
+        </a>
+      </fieldset>
+
+
+      <fieldset>
+        <a href="product.html" id="6">
+          <h3>Portable professionnel</h3>
+          <img src="assets/img/laptop-2.png" alt="Portable professionnel">
+          <p>599.99$</p>
+        </a>
+      </fieldset>
+    </fieldset>
+
+
+  </article>
+
 
 </body>
+
 </html>
+
+
+<!--
+<legend>Catégories</legend>
+      <!-- utiliser la balise button 
+      Utiliser le buton envoyer et verifier les info-->
+<!--
+      <button>
+        Appareils photo
+      </button>
+      <input type="radio" id="appareilsPhoto" name="categories" value="appareilsPhoto">
+      <label for="appareilsPhoto">Appareils photo</label><br>
+  
+      <input type="radio" id="consoles" name="categories" value="consoles">
+      <label for="consoles">Consoles</label><br>
+  
+      <input type="radio" id="ecrans" name="categories" value="ecrans" />
+      <label for="ecrans">Écrans</label><br>
+
+      <input type="radio" id="ordinateurs" name="categories" value="ordinateurs" />
+      <label for="ordinateurs">Ordinateurs</label><br>
+
+      <input type="radio" id="tousProduits" name="categories" value="tousProduits" checked />
+      <label for="tousProduits">Tous les produits</label><br>-->
+
+<!--
+      <legend>Classement</legend>-->
+<!-- on dirait qu'elle a utilisé selection pour les categoreis , classement
+        diriger tout vers une page
+        les butons avec + et - dasn la page panier, balise button 
+        voir si le name doit être le id du form et tester avec um button sumit.-->
+<!--
+      <input type="radio" id="prixBasHaut" name="classement" value="prixBasHaut" checked>
+      <label for="prixBasHaut">Prix (bas-haut)</label><br>
+  
+      <input type="radio" id="prixHautBas" name="classement" value="prixHautBas">
+      <label for="prixHautBas">Prix (haut-bas)</label><br>
+  
+      <input type="radio" id="nomAZ" name="classement" value="nomAZ" />
+      <label for="nomAZ">Nom (A-Z)</label><br>
+
+      <input type="radio" id="nomZA" name="classement" value="nomZA" />
+      <label for="nomZA">Nom (Z-A)</label><br>
+    -->

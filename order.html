@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Commande</title>
 </head>
+
 <body>
-<!-- TODO -->
+  <!-- TODO -->
+  <h1>Commande</h1>
+  <form action="confirmation.html">
+
+    <fieldset>
+      <label for="firstname">Prénom</label>
+      <input type="text" name="prenom" id="firstname" required>
+
+      <label for="lastname">Nom</label>
+      <input type="text" name="nom" id="lastname" required>
+
+      <label for="email">Adresse courriel</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Numéro de téléphone</label>
+      <input type="tel" placeholder="(555) 555-5555" pattern="\(?\d{3}\)?\s?\d{3}[\-\s]?\d{4}" name="telephone"
+        id="phone" required>
+
+    </fieldset>
+
+
+    <fieldset>
+      <label for="creditcard">Numéro de carte de crédit</label>
+      <input type="text" name="creditcard" id="creditcard" required placeholder="1234 1234 1234 1234"
+        pattern="\d{4}\s?\d{4}\s?\d{4}\s?\d{4}">
+
+
+      <label for="creditcardexpiry">Date d’expiration de la carte</label>
+      <input type="date" name="creditcardexpiry" id="creditcardexpiry" required placeholder="jj mm aaaa">
+
+    </fieldset>
+
+    <input type="submit" value="Payer">
+  </form>
 </body>
+
 </html>
