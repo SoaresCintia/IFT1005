@@ -1,3 +1,4 @@
+<!-- Cintia Dalila Soares C2791 -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,100 +20,88 @@
     </nav>
   </header>
 
-  <aside>
-    <form action="products.html" method="get">
+  <article>
+    <aside>
       <fieldset id="productcategories">
         <legend>Catégories</legend>
         <button name="productcategories" value="appareil">Appareils photo</button>
         <button name="productcategories" value="console">Consoles</button>
         <button name="productcategories" value="ecrans">Écrans</button>
         <button name="productcategories" value="ordinateurs">Ordinateurs</button>
-        <button name="productcategories" value="tous">Tous les produits</button>
+        <button name="productcategories" value="tous" aria-checked="true">Tous les produits</button>
       </fieldset>
-    </form>
 
-    <form action="products.html">
       <fieldset id="productcriteria">
-        <!-- TODO: name/value -->
         <legend>Classement</legend>
-        <button>Prix (bas-haut)</button>
-        <button>Prix (haut-bas)</button>
-        <button>Nom (A-Z)</button>
-        <button>Nom (Z-A)</button>
+        <button name="productcriteria" value="prixBasHaut" aria-checked="true">Prix (bas-haut)</button>
+        <button name="productcriteria" value="prixHautBas">Prix (haut-bas)</button>
+        <button name="productcriteria" value="nomAZ">Nom (A-Z)</button>
+        <button name="productcriteria" value="nomZA">Nom (Z-A)</button>
       </fieldset>
-    </form>
+    </aside>
 
-  </aside>
+    <section>
+      <h1>Produits</h1>
+      <p>6 produits</p>
+      <ul id="productslist">
 
-  <article>
+        <li>
+          <a href="product.html" id="1">
+            <h3>Apple TV</h3>
+            <img src="assets/img/apple-tv.png" alt="Apple TV">
+            <p>249.99$</p>
+          </a>
+        </li>
 
-    <h1>Produits</h1>
-    <p>6 produits</p>
-    <ul id="productslist">
+        <li>
+          <a href="product.html" id="2">
+            <h3>Canon EOS 5D Mark II</h3>
+            <img src="assets/img/camera-1.png" alt="Canon EOS 5D Mark II">
+            <p>2999.99$</p>
+          </a>
+        </li>
 
-      <li>
-        <a href="product.html" id="1">
-          <h3>Apple TV</h3>
-          <img src="assets/img/apple-tv.png" alt="Apple TV">
-          <p>249.99$</p>
-        </a>
-      </li>
-      <!-- TODO ajouter liste -->
-    </ul>
+        <li>
+          <a href="product.html" id="3">
+            <h3>Nikon D7000</h3>
+            <img src="assets/img/camera-2.png" alt="Nikon D7000">
+            <p>549.99$</p>
+          </a>
+        </li>
 
+        <li>
+          <a href="product.html" id="4">
+            <h3>Canon PowerShot SD1300</h3>
+            <img src="assets/img/camera-3.png" alt="Canon PowerShot SD1300">
+            <p>299.99$</p>
+          </a>
+        </li>
 
-    <fieldset>
+        <li>
+          <a href="product.html" id="5">
+            <h3>Portable</h3>
+            <img src="assets/img/laptop-1.png" alt="Portable">
+            <p>699.99$</p>
+          </a>
+        </li>
 
+        <li>
+          <a href="product.html" id="6">
+            <h3>Portable professionnel</h3>
+            <img src="assets/img/laptop-2.png" alt="Portable professionnel">
+            <p>599.99$</p>
+          </a>
+        </li>
 
-      <fieldset>
+      </ul>
 
-      </fieldset>
-
-      <fieldset>
-        <a href="product.html" id="2">
-          <h3>Canon EOS 5D Mark II</h3>
-          <img src="assets/img/camera-1.png" alt="Canon EOS 5D Mark II">
-          <p>2999.99$</p>
-        </a>
-      </fieldset>
-
-      <fieldset>
-        <a href="product.html" id="3">
-          <h3>Nikon D7000</h3>
-          <img src="assets/img/camera-2.png" alt="Nikon D7000">
-          <p>549.99$</p>
-        </a>
-      </fieldset>
-
-      <fieldset>
-        <a href="product.html" id="4">
-          <h3>Canon PowerShot SD1300</h3>
-          <img src="assets/img/camera-3.png" alt="Canon PowerShot SD1300">
-          <p>299.99$</p>
-        </a>
-      </fieldset>
-
-      <fieldset>
-        <a href="product.html" id="5">
-          <h3>Portable</h3>
-          <img src="assets/img/laptop-1.png" alt="Portable">
-          <p>699.99$</p>
-        </a>
-      </fieldset>
-
-
-      <fieldset>
-        <a href="product.html" id="6">
-          <h3>Portable professionnel</h3>
-          <img src="assets/img/laptop-2.png" alt="Portable professionnel">
-          <p>599.99$</p>
-        </a>
-      </fieldset>
-    </fieldset>
-
-
+    </section>
   </article>
 
+  <footer>
+    <div>Cíntia Dalila Soares</div>
+    <div>C2791</div>
+  </footer>
 
 </body>
 

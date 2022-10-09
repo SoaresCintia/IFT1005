@@ -1,3 +1,4 @@
+<!-- Cintia Dalila Soares C2791 -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,40 +8,58 @@
 </head>
 
 <body>
-  <!-- TODO -->
-  <h1>Commande</h1>
-  <form action="confirmation.html">
+  <header>
+    <a href="index.html"">
+        <img src=" assets/img/logo.svg" alt="logo">
+    </a>
+    <nav>
+      <a href="index.html"> Accueil</a>
+      <a href="products.html">Produits</a>
+      <a href="contact.html">Contact</a>
+      <a href="shopping-cart.html">Panier</a>
+    </nav>
+  </header>
 
-    <fieldset>
-      <label for="firstname">Prénom</label>
-      <input type="text" name="prenom" id="firstname" required>
+  <main>
+    <h1>Commande</h1>
+    <form action="confirmation.html">
 
-      <label for="lastname">Nom</label>
-      <input type="text" name="nom" id="lastname" required>
+      <fieldset name="Contact">
+        <label for="firstname">Prénom</label>
+        <input type="text" name="prenom" id="firstname" required>
 
-      <label for="email">Adresse courriel</label>
-      <input type="email" name="email" id="email" required>
+        <label for="lastname">Nom</label>
+        <input type="text" name="nom" id="lastname" required>
 
-      <label for="phone">Numéro de téléphone</label>
-      <input type="tel" placeholder="(555) 555-5555" pattern="\(?\d{3}\)?\s?\d{3}[\-\s]?\d{4}" name="telephone"
-        id="phone" required>
+        <label for="email">Adresse courriel</label>
+        <input type="email" name="email" id="email" required>
 
-    </fieldset>
+        <label for="phone">Numéro de téléphone</label>
+        <input type="tel" placeholder="(555) 555-5555" pattern="\(?\d{3}\)?\s?\d{3}[\-\s]?\d{4}" name="telephone"
+          id="phone" required>
+
+      </fieldset>
+
+      <fieldset name="Paiement">
+        <label for="creditcard">Numéro de carte de crédit</label>
+        <input type="text" name="creditcard" id="creditcard" required placeholder="1234 1234 1234 1234"
+          pattern="\d{4}\s?\d{4}\s?\d{4}\s?\d{4}">
 
 
-    <fieldset>
-      <label for="creditcard">Numéro de carte de crédit</label>
-      <input type="text" name="creditcard" id="creditcard" required placeholder="1234 1234 1234 1234"
-        pattern="\d{4}\s?\d{4}\s?\d{4}\s?\d{4}">
+        <label for="creditcardexpiry">Date d’expiration de la carte</label>
+        <input type="date" name="creditcardexpiry" id="creditcardexpiry" required placeholder="jj mm aaaa">
 
+      </fieldset>
 
-      <label for="creditcardexpiry">Date d’expiration de la carte</label>
-      <input type="date" name="creditcardexpiry" id="creditcardexpiry" required placeholder="jj mm aaaa">
+      <input type="submit" value="Payer">
+    </form>
+  </main>
 
-    </fieldset>
+  <footer>
+    <div>Cíntia Dalila Soares</div>
+    <div>C2791</div>
+  </footer>
 
-    <input type="submit" value="Payer">
-  </form>
 </body>
 
 </html>
