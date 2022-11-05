@@ -4,45 +4,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Magasin virtuel - Produits</title>
+  <title>OnlineShop - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
   <header>
-    <a href="index.html"">
-        <img src=" assets/img/logo.svg" alt="logo">
+    <a href="./index.html">
+      <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
     </a>
     <nav>
-      <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="products.html">Produits</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="shopping-cart.html">Panier</a></li>
-      </ol>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./products.html">Produits</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./shopping-cart.html">Panier</a></li>
+      </ul>
     </nav>
   </header>
-
-  <article>
-    <aside>
-      <fieldset id="productcategories">
-        <legend>Catégories</legend>
-        <button name="productcategories" value="appareil">Appareils photo</button>
-        <button name="productcategories" value="console">Consoles</button>
-        <button name="productcategories" value="ecrans">Écrans</button>
-        <button name="productcategories" value="ordinateurs">Ordinateurs</button>
-        <button name="productcategories" value="tous" aria-checked="true">Tous les produits</button>
-      </fieldset>
-
-      <fieldset id="productcriteria">
-        <legend>Classement</legend>
-        <button name="productcriteria" value="prixBasHaut" aria-checked="true">Prix (bas-haut)</button>
-        <button name="productcriteria" value="prixHautBas">Prix (haut-bas)</button>
-        <button name="productcriteria" value="nomAZ">Nom (A-Z)</button>
-        <button name="productcriteria" value="nomZA">Nom (Z-A)</button>
-      </fieldset>
-    </aside>
-
-    <section>
+  <main>
+    <section aria-label="Filtres">
+      <section>
+        <h2>Catégories</h2>
+        <div id="product-categories">
+          <button>Appareils photo</button>
+          <button>Consoles</button>
+          <button>Écrans</button>
+          <button>Ordinateurs</button>
+          <button>Tous les produits</button>
+        </div>
+      </section>
+      <section>
+        <h2>Classement</h2>
+        <div id="product-criteria">
+          <button>Prix (bas-haut)</button>
+          <button>Prix (haut-bas)</button>
+          <button>Nom (A-Z)</button>
+          <button>Nom (Z-A)</button>
+        </div>
+      </section>
+    </section>
+    <article>
       <h1>Produits</h1>
       <p>6 produits</p>
       <ul id="productslist">
@@ -97,14 +100,13 @@
 
       </ul>
 
-    </section>
-  </article>
-
+      </section>
+    </article>
+  </main>
   <footer>
     <div>Cíntia Dalila Soares</div>
     <div>C2791</div>
   </footer>
-
 </body>
 
 </html>
