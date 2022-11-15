@@ -11,20 +11,26 @@
 
 <body>
   <header>
-    <a href="./index.html">
+    <a href="./index.html" id="logo">
       <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
     </a>
     <nav>
       <ul>
         <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./products.html">Produits</a></li>
+        <li class="active"><a href="./products.html">Produits</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./shopping-cart.html">Panier</a></li>
+        <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section aria-label="Filtres">
+  <main class="line">
+    <section aria-label="Filtres" class="colonne-20">
       <section>
         <h2>Catégories</h2>
         <div id="product-categories">
@@ -45,56 +51,56 @@
         </div>
       </section>
     </section>
-    <article>
+    <div class="espace"></div>
+    <article class="colonne-75">
       <h1>Produits</h1>
-      <p>6 produits</p>
+      <p>6 produits</p><br>
       <ul id="productslist">
 
         <li>
           <a href="product.html" id="1">
             <h3>Apple TV</h3>
             <img src="assets/img/apple-tv.png" alt="Apple TV">
-            <p>249.99$</p>
+            <p class="price">249.99$</p>
           </a>
         </li>
 
         <li>
-          <a href="product.html" id="2">
+          <a href="product.html" id="2" class="produt">
             <h3>Canon EOS 5D Mark II</h3>
             <img src="assets/img/camera-1.png" alt="Canon EOS 5D Mark II">
-            <p>2999.99$</p>
+            <p class="price">2999.99$</p>
           </a>
         </li>
 
         <li>
-          <a href="product.html" id="3">
+          <a href="product.html" id="3" class="produt">
             <h3>Nikon D7000</h3>
             <img src="assets/img/camera-2.png" alt="Nikon D7000">
-            <p>549.99$</p>
+            <p class="price">549.99$</p>
           </a>
         </li>
 
         <li>
-          <a href="product.html" id="4">
+          <a href="product.html" id="4" class="produt">
             <h3>Canon PowerShot SD1300</h3>
             <img src="assets/img/camera-3.png" alt="Canon PowerShot SD1300">
-            <p>299.99$</p>
+            <p class="price">299.99$</p>
           </a>
         </li>
 
         <li>
-          <a href="product.html" id="5">
+          <a href="product.html" id="5" class="produt">
             <h3>Portable</h3>
             <img src="assets/img/laptop-1.png" alt="Portable">
-            <p>699.99$</p>
+            <p class="price">699.99$</p>
           </a>
         </li>
-
         <li>
-          <a href="product.html" id="6">
+          <a href="product.html" id="6" class="produt">
             <h3>Portable professionnel</h3>
             <img src="assets/img/laptop-2.png" alt="Portable professionnel">
-            <p>599.99$</p>
+            <p class="price">599.99$</p>
           </a>
         </li>
 

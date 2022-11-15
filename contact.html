@@ -11,15 +11,21 @@
 
 <body>
   <header>
-    <a href="./index.html">
+    <a href="./index.html" id="logo">
       <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
     </a>
     <nav>
       <ul>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./products.html">Produits</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./shopping-cart.html">Panier</a></li>
+        <li class="active"><a href="./contact.html">Contact</a></li>
+        <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a></li>
       </ul>
     </nav>
   </header>
@@ -27,22 +33,28 @@
     <article>
       <h1>Contact</h1>
       <p>Si vous souhaitez contacter <em>OnlineShop</em>, veuillez utiliser les coordonnées suivantes.</p>
-      <section>
-        <h2>Téléphone</h2>
-        <a href="tel:5143404711">(514) 340-4711</a>
-      </section>
-      <section>
-        <h2>Adresse</h2>
-        <address>
-          2900, boul. Édouard-Montpetit
-          Montréal (Québec)
-          H3T 1J4
-        </address>
-      </section>
-      <section>
-        <h2>Adresse courriel</h2>
-        <a href="mailto:onlineshop@polymtl.ca">onlineshop@polymtl.ca</a>
-      </section>
+      <div id="div-contact">
+        <section class="col-33">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+
+          <h2>Téléphone</h2>
+          <a href="tel:5143404711">(514) 340-4711</a>
+        </section>
+        <section class="col-33">
+          <h2>Adresse</h2>
+          <i class="fa-solid fa-location-dot"></i>
+          <address>
+            2900, boul. Édouard-Montpetit
+            Montréal (Québec)
+            H3T 1J4
+          </address>
+        </section>
+        <section class="col-33">
+          <h2>Adresse courriel</h2>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:onlineshop@polymtl.ca">onlineshop@polymtl.ca</a>
+        </section>
+      </div>
     </article>
   </main>
   <footer>
